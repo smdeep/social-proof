@@ -37,6 +37,10 @@ body {
     font-family: 'Spartan', sans-serif;
     font-size: 0.9375rem;
     line-height: 1.6;
+
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .main {
@@ -51,7 +55,7 @@ body {
 
     }
 
-    @media (min-width:75em) {
+    @media (min-width:50em) {
         width: 100%;
         min-width: 1140px;
 
@@ -175,7 +179,7 @@ body {
         background-color: var(--clr-primary-dark);
         color: var(--clr-white);
 
-        margin: .8em 0;
+        margin: .8em auto;
         padding: 3em 2em;
         border-radius: 10px;
         max-width: 25rem;
@@ -189,13 +193,24 @@ body {
 
         @media (min-width:37.5em) {
             width: 30%;
+
+            // This ,oves the purple cards down
+            //  Learnth the trick from Kevin Powell
+            //Could do the same for the stars
+            &:nth-child(2) {
+                transform: translateY(3rem);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(6rem);
+            }
         }
     }
 
     &__img {
         display: inline;
         // height: 40px;
-        // width: 40px;
+        width: 3rem;
         border-radius: 50%;
         margin-right: 2em;
     }
