@@ -133,7 +133,17 @@ body {
 
         }
 
-
+        // &::before {
+        //     content: '';
+        //     width: 100px;
+        //     height: 1rem;
+        //     margin: 0 auto;
+        //     display: block;
+        //     // background-color: yellow;
+        //     background-image: url(../images/icon-star.svg);
+        //     margin-bottom: .5rem;
+        //     background-repeat: space;
+        // }
     }
 
     &__ratings {
