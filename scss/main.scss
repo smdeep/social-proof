@@ -36,11 +36,16 @@ i {
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 0.9375rem;
+    padding-top: 5rem;
     line-height: 1.6;
 
-    background-image: url("../images/bg-pattern-top-desktop.svg");
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+        url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 50%, 25%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .main {
@@ -56,8 +61,12 @@ body {
     }
 
     @media (min-width:50em) {
-        width: 100%;
-        min-width: 1140px;
+        // width: 100%;
+        // max-width: 1120px;
+
+        // Shortcut learnt from Kevin
+        width: min(90%, 1200px);
+        margin: 0 auto;
 
         &__row {
             // border: 1px solid red;
@@ -99,7 +108,7 @@ body {
         color: var(--clr-neutral-dark);
         margin: .5em 0;
 
-        @media (min-width:37.5em) {
+        @media (min-width:50em) {
             text-align: left;
         }
 

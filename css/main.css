@@ -27,10 +27,14 @@ i {
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 0.9375rem;
+  padding-top: 5rem;
   line-height: 1.6;
-  background-image: url("../images/bg-pattern-top-desktop.svg");
+  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 50%, 25%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .main {
@@ -50,8 +54,7 @@ body {
 
 @media (min-width: 50em) {
   .main {
-    width: 100%;
-    min-width: 1140px;
+    margin: 0 auto;
   }
   .main__row {
     -webkit-box-orient: horizontal;
