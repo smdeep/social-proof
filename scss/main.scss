@@ -178,6 +178,8 @@ body {
         margin: .8em 0;
         padding: 3em 2em;
         border-radius: 10px;
+        max-width: 25rem;
+
 
         &--text {
             margin: 1.5em 0;
@@ -192,8 +194,8 @@ body {
 
     &__img {
         display: inline;
-        height: 40px;
-        width: 40px;
+        // height: 40px;
+        // width: 40px;
         border-radius: 50%;
         margin-right: 2em;
     }
@@ -231,5 +233,9 @@ body {
 
 .row {
     display: flex;
+    align-items: center;
+}
+
+.a-center {
     align-items: center;
 }
