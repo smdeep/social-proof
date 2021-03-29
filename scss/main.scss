@@ -62,7 +62,7 @@ body {
 
     }
 
-    @media (min-width:50em) {
+    @include mq(medium) {
         // width: 100%;
         // max-width: 1120px;
 
@@ -97,7 +97,7 @@ body {
         text-align: center;
         line-height: 1.1;
 
-        @media (min-width:37.5em) {
+        @include mq(small) {
             text-align: left;
             font-size: 3rem;
 
@@ -110,7 +110,7 @@ body {
         color: var(--clr-neutral-dark);
         margin: .5em 0;
 
-        @media (min-width:50em) {
+        @include mq(small) {
             text-align: left;
         }
 
@@ -133,15 +133,13 @@ body {
 
         }
 
-        @media (min-width:37.5em) {
+        @include mq(small) {
             text-align: left;
-
-
 
         }
 
         &:last-child {
-            @media (min-width:37.5em) {
+            @include mq(small) {
                 margin-bottom: 7em;
 
             }
@@ -172,7 +170,7 @@ body {
             background-color: var(--clr-neutral-light);
 
 
-            @media (min-width:37.5em) {
+            @include mq(small) {
                 display: flex;
                 align-items: center;
             }
@@ -202,7 +200,22 @@ body {
 
         }
 
-        @media (min-width:37.5em) {
+        // @media (min-width:37.5em) {
+        //     width: 30%;
+
+        //     // This ,oves the purple cards down
+        //     //  Learnth the trick from Kevin Powell
+        //     //Could do the same for the stars
+        //     &:nth-child(2) {
+        //         transform: translateY(3rem);
+        //     }
+
+        //     &:nth-child(3) {
+        //         transform: translateY(6rem);
+        //     }
+        // }
+
+        @include mq(small) {
             width: 30%;
 
             // This ,oves the purple cards down
@@ -215,6 +228,7 @@ body {
             &:nth-child(3) {
                 transform: translateY(6rem);
             }
+
         }
     }
 
@@ -235,24 +249,33 @@ body {
     }
 
     &__row {
-        @media (min-width:37.5em) {
+        // @media (min-width:37.5em) {
+        //     display: flex;
+        //     justify-content: space-between;
+
+        // }
+        @include mq(small) {
             display: flex;
             justify-content: space-between;
-
         }
     }
 
 }
 
 .indent-left1 {
-    @media (min-width:37.5em) {
+    @include mq(small) {
         margin-left: 2em;
     }
 }
 
 .indent-left2 {
-    @media (min-width:37.5em) {
+    // @media (min-width:37.5em) {
+    //     margin-left: 4em;
+    // }
+
+    @include mq(small) {
         margin-left: 4em;
+
     }
 
 }
