@@ -1,0 +1,23 @@
+{
+  "name": "social-proof",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss:css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smdeep/social-proof.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smdeep/social-proof/issues"
+  },
+  "homepage": "https://github.com/smdeep/social-proof#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

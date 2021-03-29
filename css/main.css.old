@@ -1,21 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
-@breakpoints : (
-    small: 40em,
-    medium: 65em,
-    big: 90em
-);
 :root {
   --clr-primary-dark: hsl(300, 43%, 22%);
   --clr-primary-soft: hsl(333, 80%, 67%);
   --clr-neutral-dark: hsl(303, 10%, 53%);
   --clr-neutral-light: hsl(300, 24%, 96%);
   --clr-white: hsl(0, 0%, 100%);
-  --clr-test: black;
 }
 
 i {
   color: #c9630f;
-  letter-spacing: 0.5em;
+  letter-spacing: .5em;
   line-height: 0;
   margin: 0;
   padding: 0;
@@ -26,11 +20,12 @@ i {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
   font-size: 0.9375rem;
   padding-top: 5rem;
   line-height: 1.6;
@@ -46,17 +41,26 @@ body {
   padding: 2em;
   min-height: 100vh;
 }
+
 .main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 @media (min-width: 50em) {
   .main {
-    width: min(90%, 1200px);
     margin: 0 auto;
   }
   .main__row {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .main__row--left-col {
     width: 35%;
@@ -74,94 +78,120 @@ body {
   text-align: center;
   line-height: 1.1;
 }
+
 @media (min-width: 37.5em) {
   .section-one__title {
     text-align: left;
     font-size: 3rem;
   }
 }
+
 .section-one p {
   text-align: center;
   color: var(--clr-neutral-dark);
-  margin: 0.5em 0;
+  margin: .5em 0;
 }
-@media (min-width: 50em) {
+
+@media (min-width: 37.5em) {
   .section-one p {
     text-align: left;
   }
 }
+
 .section-one__rating {
   text-align: center;
   background-color: var(--clr-neutral-light);
 }
+
 .section-one__rating p {
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-weight: 900;
   color: var(--clr-primary-dark);
 }
+
 @media (min-width: 37.5em) {
   .section-one__rating {
     text-align: left;
   }
 }
+
 @media (min-width: 37.5em) {
   .section-one__rating:last-child {
     margin-bottom: 7em;
   }
 }
+
 .section-one__ratings--row + .section-one__ratings--row {
   margin-top: 1em;
 }
+
 .section-one__ratings--row {
   background-color: var(--clr-neutral-light);
 }
+
 @media (min-width: 37.5em) {
   .section-one__ratings--row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .section-cards__card {
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-weight: 500;
   background-color: var(--clr-primary-dark);
   color: var(--clr-white);
-  margin: 0.8em auto;
+  margin: .8em auto;
   padding: 3em 2em;
   border-radius: 10px;
   max-width: 25rem;
 }
+
 .section-cards__card--text {
   margin: 1.5em 0;
 }
+
 @media (min-width: 37.5em) {
   .section-cards__card {
     width: 30%;
   }
   .section-cards__card:nth-child(2) {
-    transform: translateY(3rem);
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
   }
   .section-cards__card:nth-child(3) {
-    transform: translateY(6rem);
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
   }
 }
+
 .section-cards__img {
   display: inline;
   width: 3rem;
   border-radius: 50%;
   margin-right: 2em;
 }
+
 .section-cards__card--name {
   font-weight: 900;
 }
+
 .section-cards__card--title {
   color: var(--clr-primary-soft);
 }
+
 @media (min-width: 37.5em) {
   .section-cards__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -178,12 +208,17 @@ body {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .a-center {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 /*# sourceMappingURL=main.css.map */
