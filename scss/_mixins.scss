@@ -1,5 +1,9 @@
 @use 'sass:map';
 
+// This creats a list of the breakpoints
+// and then we create a mixin to use for our media
+// queries
+
 $breakpoints: (small: 37.5em,
     medium: 50em,
     big: 90em);
